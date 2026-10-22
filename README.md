@@ -7,11 +7,11 @@ Tableau de bord en français consacré à la **veille technologique en développ
 - Collecte d'articles via les flux RSS/Atom de CSS-Tricks, web.dev, Smashing Magazine et JavaScript Weekly.
 - Mise à jour automatique **chaque lundi** via GitHub Actions (07:00 UTC, 08:00 en hiver et 09:00 en été en France).
 - Affichage des articles avec **titre, date, source, résumé extrait du flux d'origine et lien**.
-- Recherche, filtres par thème, statistiques, historique hebdomadaire (12 mois).
+- Recherche, filtres par thème, statistiques, historique par jour de publication, avec calendrier et navigation entre les jours.
 - Export **PDF** grâce au bouton « Exporter en PDF », puis sélection « Enregistrer au format PDF » dans la fenêtre d'impression du navigateur.
 - Gratuit, sans clé API, pas de base de données ni d'installation de dépendances.
 
-**Note pédagogique :** les résumés sont les extraits fournis par les sources, parfois en anglais. Ils ne sont pas des synthèses rédigées par IA. Pour le BTS, tu peux enrichir ta veille avec tes propres conclusions et expliquer comment chaque article t'aide à progresser.
+**Note pédagogique :** les titres et résumés des extraits publics sont traduits automatiquement en français via Google Traduction, puis mis en cache dans le JSON. Les noms de produits et termes de code restent inchangés. Les liens ouvrent les sources originales. Ils ne sont pas des synthèses rédigées par IA. Pour le BTS, tu peux enrichir ta veille avec tes propres conclusions et expliquer comment chaque article t'aide à progresser.
 
 ## Démarrer en local
 
@@ -40,7 +40,7 @@ La tâche se relance ensuite le lundi grâce à `cron: '0 7 * * 1'`. GitHub Acti
 - L'automatisation fonctionne **après publication sur GitHub** ; télécharger ou ouvrir le site seul ne met pas automatiquement le fichier à jour.
 - Le site **n'invente pas** d'articles si un flux est indisponible. Il conserve l'historique existant et affiche les erreurs de sources.
 - Les dates indiquent la publication des articles, et non la date de leur lecture.
-- Les flux sont généralement en anglais. MDN et Grafikart restent des ressources recommandées pour approfondir les sujets, mais ne sont pas inclus dans la collecte automatique faute de flux vérifié dans cette version.
+- La traduction nécessite l’accès au service Google Traduction sans clé (disponibilité non garantie). En cas d’échec, le workflow échoue et conserve le site précédemment publié. Les flux sont généralement en anglais. MDN et Grafikart restent des ressources recommandées pour approfondir les sujets, mais ne sont pas inclus dans la collecte automatique faute de flux vérifié dans cette version.
 - Les données sont publiques dans un dépôt public. N'ajoute pas de données personnelles ou confidentielles dans le JSON.
 
 ## Organisation
@@ -49,3 +49,7 @@ La tâche se relance ensuite le lundi grâce à `cron: '0 7 * * 1'`. GitHub Acti
 - `scripts/update.py` : collecte et dédoublonnage
 - `data/articles.json` : historique des articles
 - `.github/workflows/veille.yml` : exécution automatique du lundi
+
+## Historique quotidien
+
+Dans « Historique », sélectionner une date ou un jour disponible. Les boutons précédent/suivant parcourent tous les jours, y compris sans publication. « Tout l’historique » affiche tous les articles archivés. Les dates sont celles de publication, pas celles de collecte. La collecte reste chaque lundi. L’historique collecté est conservé sans suppression automatique ; les jours antérieurs absents des flux ne peuvent pas être reconstitués.

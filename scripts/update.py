@@ -8,6 +8,8 @@ import json
 import pathlib
 import re
 import urllib.request
+import urllib.parse
+import time
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -103,6 +105,42 @@ def fetch(feed):
     return results
 
 
+def translate_text(text):
+    """Traduction automatique des extraits publics, sans clé API."""
+    query = urllib.parse.urlencode({'client': 'gtx', 'sl': 'en', 'tl': 'fr', 'dt': 't', 'q': text})
+    req = urllib.request.Request('https://translate.googleapis.com/translate_a/single?' + query,
+                                 headers={'User-Agent': 'Mozilla/5.0'})
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(req, timeout=25) as response:
+                result = json.load(response)
+            translated = ''.join(part[0] for part in result[0] if part[0]).strip()
+            if not translated:
+                raise ValueError('Traduction vide')
+            return translated
+        except Exception:
+            if attempt == 2:
+                raise
+            time.sleep(2 ** attempt)
+
+
+def french_article(article, previous):
+    article = dict(article)
+    original_title = article.get('original_title', article['title'])
+    original_summary = article.get('original_summary', article['summary'])
+    if (previous and previous.get('language') == 'fr'
+            and previous.get('original_title') == original_title
+            and previous.get('original_summary') == original_summary):
+        article.update({k: previous[k] for k in ('title', 'summary', 'original_title', 'original_summary', 'language')})
+    elif article.get('language') != 'fr':
+        article['title'] = translate_text(original_title)
+        article['summary'] = translate_text(original_summary)
+        article['original_title'] = original_title
+        article['original_summary'] = original_summary
+        article['language'] = 'fr'
+    return article
+
+
 def main():
     try:
         previous = json.loads(OUT.read_text(encoding='utf-8'))
@@ -124,9 +162,12 @@ def main():
     merged = {a['id']: a for a in old if isinstance(a, dict) and 'id' in a}
     for article in found:
         merged[article['id']] = article
-    # Historique de 12 mois, sans doublons
-    cutoff = (dt.datetime.now(dt.timezone.utc).date() - dt.timedelta(days=365)).isoformat()
-    articles = sorted((a for a in merged.values() if a.get('date', '') >= cutoff), key=lambda a: (a['date'], a['id']), reverse=True)[:550]
+    # Historique conservé sans suppression automatique ni limite d'articles.
+    old_by_id = {a['id']: a for a in old if isinstance(a, dict) and 'id' in a}
+    with ThreadPoolExecutor(max_workers=2) as pool:
+        articles = list(pool.map(lambda a: french_article(a, old_by_id.get(a['id'])), merged.values()))
+    articles.sort(key=lambda a: (a['date'], a['id']), reverse=True)
+    print(f'{len(articles)} articles disponibles en français.')
     output = {'last_updated': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'), 'article_count': len(articles), 'errors': errors, 'articles': articles}
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(output, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
