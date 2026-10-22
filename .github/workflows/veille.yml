@@ -1,0 +1,58 @@
+name: Mise à jour hebdomadaire de la veille
+on:
+  schedule:
+    - cron: '0 7 * * 1' # Lundi à 07:00 UTC (08:00 hiver, 09:00 été en France)
+  push:
+    branches: [main]
+    paths-ignore:
+      - data/articles.json
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: veille-pages
+  cancel-in-progress: false
+jobs:
+  mise-a-jour:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Collecter les flux RSS
+        run: python scripts/update.py
+      - name: Enregistrer les actualités
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/articles.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Veille web : mise à jour automatique"
+            git push
+          fi
+      - name: Préparer le site public
+        run: |
+          mkdir _site
+          cp index.html style.css app.js _site/
+          cp -r data _site/data
+      - name: Configurer GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Préparer la publication
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+  publication:
+    needs: mise-a-jour
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publier sur GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
