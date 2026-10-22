@@ -1,6 +1,376 @@
 {
-  "last_updated": null,
-  "article_count": 0,
+  "last_updated": "2026-10-22T08:57:40+00:00",
+  "article_count": 41,
   "errors": [],
-  "articles": []
+  "articles": [
+    {
+      "id": "c15c1be0aad75fb4",
+      "title": "Embracing Playful Imperfection With The CSS `random()` Function",
+      "url": "https://smashingmagazine.com/2026/10/embracing-playful-imperfection-css-random-function/",
+      "source": "Smashing Magazine",
+      "date": "2026-10-20",
+      "category": "JavaScript",
+      "summary": "Design systems thrive on consistency, so where does randomness fit in? Through playful demos of organic typography, bouncing letters, and splayed cards, Brecht De Ruyte shows how the new CSS `random()` function brings a little imperfection to the web without JavaScript libraries or preprocessor loops that generate hundreds of lines of static CSS."
+    },
+    {
+      "id": "a75ed007481a527e",
+      "title": "The up to 8x faster Rust port of TypeScript",
+      "url": "https://javascriptweekly.com/issues/807",
+      "source": "JavaScript Weekly",
+      "date": "2026-10-20",
+      "category": "Sécurité web",
+      "summary": "#​807 — October 20, 2026 Read on the Web JavaScript Weekly tsrs: Cloudflare and VoidZero's Rust Port of TypeScript — A Rust port of the Go-based TypeScript 7 compiler, built with some input from the TypeScript team and heading into Oxc . Benchmarks claim up to 8x the speed of TypeScript 7.0 and it runs in WebAssembly. Experimental, but npx tsrs…"
+    },
+    {
+      "id": "8b9be77adbdfad86",
+      "title": "Is Your Organization Messing Up AI Adoption?",
+      "url": "https://smashingmagazine.com/2026/10/is-your-organization-messing-up-ai-adoption/",
+      "source": "Smashing Magazine",
+      "date": "2026-10-16",
+      "category": "Développement web",
+      "summary": "What can digital transformation teach us about AI adoption? Paul Boag revisits his book Digital Adaptation to show how lessons from the past can help organizations navigate the challenges of AI today."
+    },
+    {
+      "id": "ec4425944808c746",
+      "title": "Ryan Dahl: 'Why reimplement Node? It works.'",
+      "url": "https://javascriptweekly.com/issues/806",
+      "source": "JavaScript Weekly",
+      "date": "2026-10-13",
+      "category": "Sécurité web",
+      "summary": "#​806 — October 13, 2026 Read on the Web JavaScript Weekly Deno is Joining Cloudflare (But…) — Maybe David Bushell saw the writing on the wall , as the Deno team isn't joining Cloudflare to keep working on Deno , but to fold celld into workerd so Durable Objects can be self-hosted ( more on that here ). The Deno runtime will get a final year of…"
+    },
+    {
+      "id": "e4f759ce24f43995",
+      "title": "Why don't more developers 'use the platform'?",
+      "url": "https://javascriptweekly.com/issues/805",
+      "source": "JavaScript Weekly",
+      "date": "2026-10-06",
+      "category": "Sécurité web",
+      "summary": "#​805 — October 6, 2026 Read on the Web JavaScript Weekly Why Don't More Developers 'Use the Platform'? — A thoughtful look at why we often rebuild what browsers already offer, from someone usually on the platform's side. It kicked off an extensive Hacker News discussion , with many arguing native controls and APIs are too limited or awkward to…"
+    },
+    {
+      "id": "065ba1ed222543f6",
+      "title": "New to the web platform in September",
+      "url": "https://web.dev/blog/web-platform-09-2026?hl=en",
+      "source": "web.dev",
+      "date": "2026-10-02",
+      "category": "Développement web",
+      "summary": "Discover some of the interesting features that have landed in stable and beta web browsers during September 2026."
+    },
+    {
+      "id": "83b5297dec1e9cb2",
+      "title": "Under Autumn’s Spell (October 2026 Wallpapers Edition)",
+      "url": "https://smashingmagazine.com/2026/09/desktop-wallpaper-calendars-october-2026/",
+      "source": "Smashing Magazine",
+      "date": "2026-09-30",
+      "category": "Développement web",
+      "summary": "October is just around the corner, which means it’s time for some new desktop wallpapers! Designed by the community for the community, they’re here to brighten your screens, and maybe spark some creativity along the way."
+    },
+    {
+      "id": "c9821fb6260d7477",
+      "title": "A-ha's Take on Me, recreated in pure JavaScript",
+      "url": "https://javascriptweekly.com/issues/804",
+      "source": "JavaScript Weekly",
+      "date": "2026-09-29",
+      "category": "Accessibilité & UX",
+      "summary": "#​804 — September 29, 2026 Read on the Web JavaScript Weekly How Anthropic Made Claude's Apps 3x Faster in Two Weeks — A grab bag of performance lessons from a sprint that cut p75 'time-to-typeable' from 3.1s to 0.55s. Em dashes ( the irony! ) pushed V8 onto a slower regex path, a stray location.reload() caused half a million hidden reloads a day,…"
+    },
+    {
+      "id": "5c9d13f97faabce4",
+      "title": "Stop Treating CSS Container Queries Like Traditional Media Queries",
+      "url": "https://smashingmagazine.com/2026/09/stop-treating-css-container-queries-traditional-media-queries/",
+      "source": "Smashing Magazine",
+      "date": "2026-09-16",
+      "category": "HTML & CSS",
+      "summary": "Despite broad browser support, container queries remain surprisingly underused and frequently misunderstood. Let’s look at how they differ from media queries, when to reach for each, and how container queries help reusable components respond naturally to the contexts in which they appear. - CSS - Tools - Techniques"
+    },
+    {
+      "id": "b008f772ace718d6",
+      "title": "Building A UX ROI Case That Survives The Boardroom",
+      "url": "https://smashingmagazine.com/2026/09/building-ux-roi-case-survives-boardroom/",
+      "source": "Smashing Magazine",
+      "date": "2026-09-11",
+      "category": "Accessibilité & UX",
+      "summary": "Strong UX ideas do not secure investment on their own. Through a worked example, Alex Williams breaks down how to define business value, calculate costs, test causality, and build a credible case for the return on a design initiative. - UX - Design - Business"
+    },
+    {
+      "id": "8f216ec363408e7c",
+      "title": "The Death Of The Button: Why The Best Interface Is No Interface",
+      "url": "https://smashingmagazine.com/2026/09/death-button-why-best-interface-is-no-interface/",
+      "source": "Smashing Magazine",
+      "date": "2026-09-09",
+      "category": "Accessibilité & UX",
+      "summary": "The web is evolving beyond menus, forms, and endless clicks toward experiences shaped around human intent. For UX designers, understanding this shift means re-evaluating their role, moving from designing visible interfaces to guiding transparent, intent-driven AI experiences."
+    },
+    {
+      "id": "ded2bbf1186c9b7e",
+      "title": "Submit your proposals for Interop 2027",
+      "url": "https://web.dev/blog/interop-2027-proposals?hl=en",
+      "source": "web.dev",
+      "date": "2026-09-03",
+      "category": "Développement web",
+      "summary": "It's time to let us know which web platform features should be part of Interop 2027."
+    },
+    {
+      "id": "dfd52072ccb3f753",
+      "title": "Let’s Use the Emergent CSS random() Function in all the Browsers",
+      "url": "https://css-tricks.com/css-random-function-polyfill/",
+      "source": "CSS-Tricks",
+      "date": "2026-08-31",
+      "category": "HTML & CSS",
+      "summary": "The journey to create a polyfill for the upcoming CSS random() function that works in all browsers. Let’s Use the Emergent CSS random() Function in all the Browsers originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as well."
+    },
+    {
+      "id": "803a990ade47179e",
+      "title": "What’s !important #18: , Syntax ::highlight()ing, named-feature(), and More",
+      "url": "https://css-tricks.com/whats-important-18/",
+      "source": "CSS-Tricks",
+      "date": "2026-08-31",
+      "category": "HTML & CSS",
+      "summary": "Well, that’s a wrap. No, not a flex-wrap, but rather today marks a new day, week, month, season, aaaand new edition of What’s important (#18), bringing you the best content that developers have produced over the last couple of weeks or so. What’s !important #18: <geolocation>, Syntax ::highlight()ing, named-feature(), and More originally…"
+    },
+    {
+      "id": "234692c6daccbe4c",
+      "title": "The Many Faces Of September (2026 Wallpapers Edition)",
+      "url": "https://smashingmagazine.com/2026/08/desktop-wallpaper-calendars-september-2026/",
+      "source": "Smashing Magazine",
+      "date": "2026-08-31",
+      "category": "Développement web",
+      "summary": "Could there be a better way to welcome the new month than with a new collection of desktop wallpapers? Whether you’re holding tightly onto summer or eagerly awaiting autumn, we’ve got some eye-catching designs to make your September just a bit more colorful. Enjoy!"
+    },
+    {
+      "id": "ffad9ae15ef2a63f",
+      "title": "New to the web platform in August",
+      "url": "https://web.dev/blog/web-platform-08-2026?hl=en",
+      "source": "web.dev",
+      "date": "2026-08-28",
+      "category": "Développement web",
+      "summary": "Discover some of the interesting features that have landed in stable and beta web browsers during August 2026."
+    },
+    {
+      "id": "62c651d806323623",
+      "title": "Creating Web Widgets Using the Document Picture-in-Picture API",
+      "url": "https://css-tricks.com/creating-web-widgets-using-the-document-picture-in-picture-api/",
+      "source": "CSS-Tricks",
+      "date": "2026-08-27",
+      "category": "JavaScript",
+      "summary": "The general idea is that we create a Document Picture-in-Picture window (DPIP window), and then we put HTML, CSS, and JavaScript into it. Creating Web Widgets Using the Document Picture-in-Picture API originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as well."
+    },
+    {
+      "id": "f3d759ed6d8c8025",
+      "title": "Rethinking Data Visualisation: A UX Approach To Dashboards That Actually Drives Decisions",
+      "url": "https://smashingmagazine.com/2026/08/rethinking-data-visualisation-ux-approach-dashboards/",
+      "source": "Smashing Magazine",
+      "date": "2026-08-26",
+      "category": "Accessibilité & UX",
+      "summary": "Data visualisation sits at the intersection of two disciplines that rarely talk to each other: data and design. Meriem Benhabiles explores what changes when you bring structured UX thinking to dashboards and data presentations, from the questions you ask before opening any tool to the decisions that determine whether an insight actually lands."
+    },
+    {
+      "id": "b338fc250a91aee6",
+      "title": "animation-trigger",
+      "url": "https://css-tricks.com/almanac/properties/a/animation-trigger/",
+      "source": "CSS-Tricks",
+      "date": "2026-08-26",
+      "category": "HTML & CSS",
+      "summary": "The CSS animation-trigger property allows you to delay the start of a CSS animation until a specific trigger occurs. animation-trigger originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as well."
+    },
+    {
+      "id": "cfe7797bade8f5ce",
+      "title": "MicroLighter: Syntax Highlighter",
+      "url": "https://css-tricks.com/microlighter-syntax-highlighter/",
+      "source": "CSS-Tricks",
+      "date": "2026-08-25",
+      "category": "JavaScript",
+      "summary": "Syntax highlighting for code blocks without the complicated markup, spans, classes, and bloated JavaScript, courtesy of Uncle Dave. MicroLighter: Syntax Highlighter originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as well."
+    },
+    {
+      "id": "6a79bd937fc16a1d",
+      "title": "Why Your Website Should Never Stop Changing",
+      "url": "https://smashingmagazine.com/2026/08/why-website-should-never-stop-changing/",
+      "source": "Smashing Magazine",
+      "date": "2026-08-25",
+      "category": "Développement web",
+      "summary": "Every website peaks on launch day and slowly drifts from there, not because it breaks, but because nobody has time to keep it current. Autonomous websites, continuously optimized by agents after launch, aim to change that. Pierre Burgy shares what they learned building for full website autonomy and the deeper design problem they uncovered along…"
+    },
+    {
+      "id": "29d2b48b7e5b231d",
+      "title": "WordPress PHP-Only Block Registration",
+      "url": "https://css-tricks.com/wordpress-php-block-registration/",
+      "source": "CSS-Tricks",
+      "date": "2026-08-24",
+      "category": "Frameworks",
+      "summary": "Seven and half years after blocks arrived in Core, WordPress introduces a way to build blocks without React annd build pipelines. All you need is PHP. WordPress PHP-Only Block Registration originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as well."
+    },
+    {
+      "id": "ae5c14941ac39b49",
+      "title": "Resolved: CSS Class Prefix Selector",
+      "url": "https://css-tricks.com/resolved-css-class-prefix-selector/",
+      "source": "CSS-Tricks",
+      "date": "2026-08-21",
+      "category": "HTML & CSS",
+      "summary": "A newly resolved proposal would allow us to select classes that are a prefix for variations with a wildcard, like .prefix-* . Resolved: CSS Class Prefix Selector originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as well."
+    },
+    {
+      "id": "5d81b11e2d23aa0e",
+      "title": "Timing Charts: A Blueprint For SMIL Animations",
+      "url": "https://smashingmagazine.com/2026/08/timing-charts-blueprint-smil-animations/",
+      "source": "Smashing Magazine",
+      "date": "2026-08-20",
+      "category": "JavaScript",
+      "summary": "Discover SMIL, the often-overlooked way to animate SVGs that works inside ` ` tags and can fully animate everything in an SVG without JavaScript."
+    },
+    {
+      "id": "98cae124333c3874",
+      "title": "CSS Navigation Matching, Early Days",
+      "url": "https://css-tricks.com/css-navigation-matching-early-days/",
+      "source": "CSS-Tricks",
+      "date": "2026-08-19",
+      "category": "JavaScript",
+      "summary": "Apply a style when someone navigates from one specific page to another. The idea being it'd make the sources for cross-document view transitions declarative in CSS rather than managing that stuff in JavaScript. CSS Navigation Matching, Early Days originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as…"
+    },
+    {
+      "id": "36206db3e62f6ff2",
+      "title": "WordPress.com Student Plan",
+      "url": "https://css-tricks.com/wordpress-student-plan/",
+      "source": "CSS-Tricks",
+      "date": "2026-08-19",
+      "category": "HTML & CSS",
+      "summary": "As someone who teaches beginning web development, I find that building a WordPress site makes for a great final project. Hosting those projects has always been a roadblock though. WordPress.com Student Plan originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as well."
+    },
+    {
+      "id": "172d4f0ca0d4ec6b",
+      "title": "Dark mode toggles: two states are enough",
+      "url": "https://css-tricks.com/dark-mode-toggles-two-states-are-enough/",
+      "source": "CSS-Tricks",
+      "date": "2026-08-17",
+      "category": "HTML & CSS",
+      "summary": "Lea's pushing back on light/dark mode implementations that display three state options for visitors: light, dark, and system. Dark mode toggles: two states are enough originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as well."
+    },
+    {
+      "id": "3e4feab40a943a7c",
+      "title": "What’s !important #17: Custom Highlight API, CSS Navigation Matching, Fixing text-stroke, and More",
+      "url": "https://css-tricks.com/whats-important-17/",
+      "source": "CSS-Tricks",
+      "date": "2026-08-14",
+      "category": "HTML & CSS",
+      "summary": "Plus, how to style skeleton UIs, how to enable diagonal scrolling, how images can overflow themselves, and yet, still more. Basically, how to do a lot of really cool (CSS) stuff. What’s !important #17: Custom Highlight API, CSS Navigation Matching, Fixing text-stroke, and More originally handwritten and published with love on CSS-Tricks . You…"
+    },
+    {
+      "id": "2115eab5af855743",
+      "title": "Blocked aria-hidden: The Warning is Right, and Every Fix You’ve Found is Wrong",
+      "url": "https://css-tricks.com/blocked-aria-hidden-fix/",
+      "source": "CSS-Tricks",
+      "date": "2026-08-12",
+      "category": "HTML & CSS",
+      "summary": "The warning is correct. And the recommended fixes you've probably seen are wrong. Here's what you can do instead to properly fix the issue. Blocked aria-hidden: The Warning is Right, and Every Fix You’ve Found is Wrong originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as well."
+    },
+    {
+      "id": "4aba63dcaad36686",
+      "title": "Building Tactile UX: Honoring Intentional Design With Lottie",
+      "url": "https://smashingmagazine.com/2026/08/building-tactile-ux-honoring-intentional-design-lottie/",
+      "source": "Smashing Magazine",
+      "date": "2026-08-11",
+      "category": "Accessibilité & UX",
+      "summary": "When tasked with building a highly interactive, tactile web experience, the architecture must serve the art direction. In this article, Alexey Kopytin explains their architectural rationale for building a digital stress-relief squeeze toy game using Lottie animations, DOM events, and distance-based math to maintain absolute control over their…"
+    },
+    {
+      "id": "d643d9b8183c7ac0",
+      "title": "SmashingConf Freiburg 2026, September 7-10",
+      "url": "https://css-tricks.com/smashingconf-freiburg-2026-september-7-10/",
+      "source": "CSS-Tricks",
+      "date": "2026-08-10",
+      "category": "HTML & CSS",
+      "summary": "Smashing Magazine’s in-person conferences are back and returning to the wonderful city of Freiburg next month, September 7–10. SmashingConf Freiburg 2026, September 7-10 originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as well."
+    },
+    {
+      "id": "7cf5aa654fb8979d",
+      "title": "Animating CSS border-image",
+      "url": "https://css-tricks.com/animating-css-border-image/",
+      "source": "CSS-Tricks",
+      "date": "2026-08-10",
+      "category": "HTML & CSS",
+      "summary": "Border images are an overlooked feature. One neat fact is that border image slices can run across entire borders on an element, and animating it creates beautiful effects. Animating CSS border-image originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as well."
+    },
+    {
+      "id": "8def1cb6f6fb0618",
+      "title": "How Baseline Can Help You Ship Less JavaScript",
+      "url": "https://smashingmagazine.com/2026/08/how-baseline-can-help-ship-less-javascript/",
+      "source": "Smashing Magazine",
+      "date": "2026-08-07",
+      "category": "JavaScript",
+      "summary": "The gap between “you need a library for this” and “the browser does this” keeps closing. A practical guide to auditing your dependencies and finding what the web platform can now handle for you."
+    },
+    {
+      "id": "28c1a9205603e574",
+      "title": "Using and Styling the Dialog Element",
+      "url": "https://css-tricks.com/using-and-styling-the-dialog-element/",
+      "source": "CSS-Tricks",
+      "date": "2026-08-07",
+      "category": "HTML & CSS",
+      "summary": "There's a lot of nuance to the <dialog> element, a seemingly little piece of web architecture. I've got some notes from digging into it. Using and Styling the Dialog Element originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as well."
+    },
+    {
+      "id": "82b8465fa9bc5fa9",
+      "title": "New to the web platform in July",
+      "url": "https://web.dev/blog/web-platform-07-2026?hl=en",
+      "source": "web.dev",
+      "date": "2026-07-31",
+      "category": "Développement web",
+      "summary": "Discover some of the interesting features that have landed in stable and beta web browsers during July 2026."
+    },
+    {
+      "id": "76b4f021366a08af",
+      "title": "The Bull And Bear Case For Digital Design In The Age Of AI",
+      "url": "https://smashingmagazine.com/2026/07/bull-and-bear-case-digital-design-age-ai/",
+      "source": "Smashing Magazine",
+      "date": "2026-07-29",
+      "category": "Développement web",
+      "summary": "As AI reshapes product design, it could give designers greater autonomy or expose the gaps that autonomy makes harder to hide. Exploring both the bull and bear cases, Andy Budd examines what happens when designers need less permission to act."
+    },
+    {
+      "id": "b52205299b17c7e3",
+      "title": "Thinking Outside The Box: Digital Design In The AI Era",
+      "url": "https://smashingmagazine.com/2026/07/digital-design-ai-era/",
+      "source": "Smashing Magazine",
+      "date": "2026-07-28",
+      "category": "Développement web",
+      "summary": "Many of the AI tools we interact with take the form of text boxes. But what if there was a different way to interact with AI? Oleksii Hrzhehorzhevskyi explores a different approach to creating a new AI assistant and how designers can navigate the field as AI continues to change it."
+    },
+    {
+      "id": "86a4cde1220d3428",
+      "title": "The Baseline Features audit is now available in Lighthouse",
+      "url": "https://web.dev/blog/baseline-lighthouse-features-audit?hl=en",
+      "source": "web.dev",
+      "date": "2026-07-27",
+      "category": "Développement web",
+      "summary": "Learn which web features are used on a page—and their Baseline status—with the new Lighthouse Baseline features audit."
+    },
+    {
+      "id": "fa0b3ac1fdf63a82",
+      "title": "Weaponizing And Defending The React Flight Protocol: Deserialization Sinks In RSCs",
+      "url": "https://smashingmagazine.com/2026/07/weaponizing-defending-react-flight-protocol/",
+      "source": "Smashing Magazine",
+      "date": "2026-07-21",
+      "category": "Sécurité web",
+      "summary": "While React Server Components rely on the custom Flight protocol to stream interactive UIs, this same mechanism introduces powerful deserialization sinks that attackers can exploit. Durgesh Pawar breaks down the mechanics behind the CVSS 10.0 “React2Shell” vulnerability to show how protocol manipulation can lead to remote code execution."
+    },
+    {
+      "id": "c728b3a6294ad475",
+      "title": "When It Makes Sense To “Block” The Main Thread",
+      "url": "https://smashingmagazine.com/2026/07/when-makes-sense-block-main-thread/",
+      "source": "Smashing Magazine",
+      "date": "2026-07-17",
+      "category": "JavaScript",
+      "summary": "The common rule of thumb is to never “block” the browser’s main thread when running JavaScript tasks. But is this a hard rule? Victor Ayomipo describes a use case he encountered involving a screenshot extension where he made an exception to the rule and decided that blocking the main thread was absolutely the right thing to do."
+    },
+    {
+      "id": "246910f432e4e604",
+      "title": "No, People Don’t Want More AI In Their Life",
+      "url": "https://smashingmagazine.com/2026/07/people-dont-want-more-ai/",
+      "source": "Smashing Magazine",
+      "date": "2026-07-15",
+      "category": "Accessibilité & UX",
+      "summary": "Many companies assume everyone craves new AI features. But the reality is that most people don't want more AI — at least not in the way most AI leaders envision it. Brought to you by Design Patterns For AI Interfaces , **friendly video courses on UX** and design patterns by Vitaly."
+    }
+  ]
 }
