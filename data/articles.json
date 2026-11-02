@@ -1,8 +1,80 @@
 {
-  "last_updated": "2026-10-26T13:55:28+00:00",
-  "article_count": 41,
+  "last_updated": "2026-11-02T16:50:53+00:00",
+  "article_count": 47,
   "errors": [],
   "articles": [
+    {
+      "id": "136356673b6f4a15",
+      "title": "Quoi de neuf !important #20 : Effets de défilement GTA 6, Scrollspies, random()",
+      "url": "https://css-tricks.com/whats-important-20/",
+      "source": "CSS-Tricks",
+      "date": "2026-11-02",
+      "category": "HTML & CSS",
+      "summary": "Ceci est le dernier numéro de What’s !important sur CSS-Tricks.com. La bonne nouvelle est qu’il revient sous une forme étendue sous le nom de newsletter CSS-Tricks. Je t'ai eu là pendant une seconde, n'est-ce pas ? Désolé, je n’arrivais pas à décider si je devais tromper ou traiter, alors j’ai opté pour les deux. Joyeux Halloween Quoi de neuf !important #20 : Effets de défilement GTA 6, Scrollspies, random()…",
+      "original_title": "What’s !important #20: GTA 6 Scroll Effects, Scrollspies, random()",
+      "original_summary": "This is the final issue of What’s !important on CSS-Tricks.com. The good news is that it’s coming back in an expanded form as the CSS-Tricks newsletter. I had ya there for a second, didn’t I? Sorry, I couldn’t decide whether to trick or treat, so I went for both. Happy Halloween What’s !important #20: GTA 6 Scroll Effects, Scrollspies, random()…",
+      "language": "fr"
+    },
+    {
+      "id": "17b11f98699dd689",
+      "title": "Une étincelle de couleur dans le gris de novembre (édition fonds d'écran 2026)",
+      "url": "https://smashingmagazine.com/2026/10/desktop-wallpaper-calendars-november-2026/",
+      "source": "Smashing Magazine",
+      "date": "2026-10-31",
+      "category": "Développement web",
+      "summary": "Commençons le mois de novembre avec une nouvelle collection de fonds d'écran ! Conçus par des créatifs du monde entier, les fonds d'écran sont disponibles dans une variété de résolutions d'écran et peuvent être téléchargés gratuitement. Apprécier!",
+      "original_title": "A Spark Of Color In November’s Gray (2026 Wallpapers Edition)",
+      "original_summary": "Let’s kick of November with a new collection of desktop wallpapers! Designed by creatives from across the globe, the wallpapers come in a variety of screen resolutions and can be downloaded for free. Enjoy!",
+      "language": "fr"
+    },
+    {
+      "id": "c77b45a0795743ec",
+      "title": "La table Frankenstein",
+      "url": "https://css-tricks.com/the-frankenstein-table/",
+      "source": "CSS-Tricks",
+      "date": "2026-10-29",
+      "category": "HTML & CSS",
+      "summary": "Une façon très effrayante d'aborder les tableaux en utilisant d'autres techniques de mise en page, comme CSS Grid. La table Frankenstein initialement manuscrite et publiée avec amour sur CSS-Tricks . Vous devriez également recevoir la newsletter.",
+      "original_title": "The Frankenstein Table",
+      "original_summary": "A super scary way to go about tables using other layout techniques, like CSS Grid. The Frankenstein Table originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as well.",
+      "language": "fr"
+    },
+    {
+      "id": "3f9dc4ff26361ef9",
+      "title": "Reconstruire le moteur GTA d'origine en JavaScript",
+      "url": "https://javascriptweekly.com/issues/808",
+      "source": "JavaScript Weekly",
+      "date": "2026-10-27",
+      "category": "Sécurité web",
+      "summary": "#​808 — 27 octobre 2026 Lire sur le Web JavaScript hebdomadaire TanStack AI 1.0 : la boîte à outils d'IA neutre vis-à-vis du fournisseur devient stable — La boîte à outils d'IA indépendante du framework de TanStack atteint la version 1.0, avec des API stables pour le chat, les outils et les médias, ainsi que 23 adaptateurs de fournisseur. Un nouveau harnais d'agent prend en charge les sessions de longue durée, mais ses API restent expérimentales. Tuzlak,…",
+      "original_title": "Rebuilding the original GTA engine in JavaScript",
+      "original_summary": "#​808 — October 27, 2026 Read on the Web JavaScript Weekly TanStack AI 1.0: The Vendor-Neutral AI Toolkit Goes Stable — TanStack's framework-agnostic AI toolkit reaches 1.0, with stable APIs for chat, tools and media, plus 23 provider adapters. A new agent harness supports long-running sessions, but its APIs remain experimental. Tuzlak,…",
+      "language": "fr"
+    },
+    {
+      "id": "1493b28e25b2fcc4",
+      "title": "What's !important #19 : effets de réfraction CSS, requêtes d'état de défilement, @custom-media, etc.",
+      "url": "https://css-tricks.com/whats-important-19/",
+      "source": "CSS-Tricks",
+      "date": "2026-10-27",
+      "category": "HTML & CSS",
+      "summary": "Nous sommes de retour ! Ne vous inquiétez pas, ce n'est pas une astuce (malgré ce que notre nom l'indique !). Cependant, en raison de la pause, nous sommes également un peu en retard. C’est pourquoi ce numéro de What’s !important est absolument empilé. Tout tueur, pas de remplissage. Voici ce que vous avez manqué. What's !important #19 : effets de réfraction CSS, requêtes d'état de défilement, @custom-media, et plus encore…",
+      "original_title": "What’s !important #19: CSS Refraction Effects, Scroll State Queries, @custom-media, and More",
+      "original_summary": "We’re back! Don't worry, this isn’t a trick (despite what our name suggests!). However, due to the hiatus, we're also a little behind. That’s why this issue of What’s !important is absolutely stacked. All killer, no filler. Here's what you missed. What’s !important #19: CSS Refraction Effects, Scroll State Queries, @custom-media, and More…",
+      "language": "fr"
+    },
+    {
+      "id": "da89bc3e4c08aab8",
+      "title": "CSS-Tricks a un nouveau propriétaire !",
+      "url": "https://css-tricks.com/css-tricks-has-a-new-owner/",
+      "source": "CSS-Tricks",
+      "date": "2026-10-26",
+      "category": "HTML & CSS",
+      "summary": "Oui, j'ai les clés du château, pour ainsi dire. Et même après 12 ans de travail sur le site, j'avoue que je suis un peu dépassé et nerveux à ce sujet. CSS-Tricks a un nouveau propriétaire ! initialement manuscrit et publié avec amour sur CSS-Tricks . Vous devriez également recevoir la newsletter.",
+      "original_title": "CSS-Tricks has a new owner!",
+      "original_summary": "Yes, I've got the keys to the castle, so to speak. And, even after 12 years of working on the site, I'll admit I'm a little overwhelmed and nervous about that. CSS-Tricks has a new owner! originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as well.",
+      "language": "fr"
+    },
     {
       "id": "c15c1be0aad75fb4",
       "title": "Adopter l'imperfection ludique avec la fonction CSS `random()`",
