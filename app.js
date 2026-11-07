@@ -17,20 +17,38 @@ function render() {
   const chips = document.querySelectorAll('.chip'); chips.forEach(c => c.classList.toggle('active', c.dataset.category === state.filter));
   $('category').value = state.filter;
 }
+function showHistory(date = '', week = '') {
+  const articles = state.articles.filter(a => week ? mondayOf(a.date) === week : !date || a.date === date).sort((a,b) => b.date.localeCompare(a.date));
+  $('history-date').value = date;
+  $('history-status').textContent = `${articles.length} article${articles.length > 1 ? 's' : ''}` + (week ? ` — semaine du ${fmtDate(week)}` : date ? ` — ${fmtDate(date)}` : ' — tout l’historique');
+  $('history-articles').replaceChildren(...articles.map(card));
+  if (!articles.length) { const empty = document.createElement('p'); empty.className = 'empty'; empty.textContent = 'Aucun article publié à cette date. Choisissez une autre date ou affichez tout l’historique.'; $('history-articles').append(empty); }
+}
 function renderHistory() {
   const weeks = new Map();
   for (const a of state.articles) { const week = mondayOf(a.date); weeks.set(week, (weeks.get(week) || 0) + 1); }
   const container = $('history-list'); container.replaceChildren();
-  if (!weeks.size) { container.textContent = 'L’historique apparaîtra après la première mise à jour.'; return; }
-  for (const [week, count] of [...weeks].sort((a,b) => b[0].localeCompare(a[0])).slice(0, 16)) {
-    const row = document.createElement('div'); row.className = 'history-week';
-    const label = document.createElement('div'); label.textContent = `Semaine du ${fmtDate(week)}`;
-    const info = document.createElement('small'); info.textContent = `${count} article${count > 1 ? 's' : ''}`;
+  for (const [week, count] of [...weeks].sort((a,b) => b[0].localeCompare(a[0]))) {
+    const row = document.createElement('button'); row.type = 'button'; row.className = 'history-week';
+    const label = document.createElement('span'); label.textContent = `Semaine du ${fmtDate(week)}`;
+    const info = document.createElement('small'); info.textContent = `${count} article${count > 1 ? 's' : ''} — consulter →`;
     row.append(label, info);
+    row.addEventListener('click', () => { showHistory('', week); $('history-status').scrollIntoView({behavior:'smooth', block:'start'}); });
     container.append(row);
   }
+  showHistory();
+}
+function moveHistoryDay(offset) {
+  const dates = state.articles.map(a => a.date).sort();
+  const current = $('history-date').value || dates[dates.length - 1] || new Date().toISOString().slice(0,10);
+  const date = new Date(current + 'T12:00:00Z'); date.setUTCDate(date.getUTCDate() + offset);
+  showHistory(date.toISOString().slice(0,10));
 }
 function initEvents() {
+  $('history-date').addEventListener('change', e => showHistory(e.target.value));
+  $('history-all').addEventListener('click', () => showHistory());
+  $('day-prev').addEventListener('click', () => moveHistoryDay(-1));
+  $('day-next').addEventListener('click', () => moveHistoryDay(1));
   $('search').addEventListener('input', e => { state.q = e.target.value.trim().toLowerCase(); state.limit=9; render(); });
   $('category').addEventListener('change', e => { state.filter=e.target.value; state.limit=9; render(); });
   document.querySelectorAll('.chip').forEach(c => c.addEventListener('click', () => {state.filter=c.dataset.category; state.limit=9; render();}));

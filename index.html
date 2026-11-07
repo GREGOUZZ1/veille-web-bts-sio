@@ -6,8 +6,8 @@
   <meta name="theme-color" content="#13151b">
   <meta name="description" content="Veille technologique en développement web — BTS SIO SLAM">
   <title>Veille technologique | Développement web • BTS SIO SLAM</title>
-  <link rel="stylesheet" href="style.css?v=20261107">
-  <script src="app.js?v=20261107" defer></script>
+  <link rel="stylesheet" href="style.css?v=20261107-history">
+  <script src="app.js?v=20261107-history" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -34,7 +34,7 @@
       <div class="chips" id="chips"><button type="button" class="chip active" data-category="all">TOUT</button><button type="button" class="chip" data-category="JavaScript">JAVASCRIPT</button><button type="button" class="chip" data-category="HTML & CSS">HTML & CSS</button><button type="button" class="chip" data-category="Frameworks">FRAMEWORKS</button><button type="button" class="chip" data-category="Accessibilité & UX">UX & ACCESSIBILITÉ</button><button type="button" class="chip" data-category="Sécurité web">SÉCURITÉ</button></div>
       <div id="notice" role="status" class="notice">Chargement des articles…</div><div id="articles" class="articles"></div><div class="more-bar"><button type="button" id="more" class="more-btn" hidden>AFFICHER PLUS D’ARTICLES ↓</button></div>
     </section>
-    <section id="historique" class="history-section"><div class="container"><div class="section-index mono"><span>03 / SUIVI DANS LE TEMPS</span><span>ARCHIVES</span></div><div class="section-heading"><div><h2>MON <span>HISTORIQUE.</span></h2><p>Retrouver les articles par semaine de publication.</p></div></div><div id="history-list" class="history-list"></div></div></section>
+    <section id="historique" class="history-section"><div class="container"><div class="section-index mono"><span>03 / SUIVI DANS LE TEMPS</span><span>ARCHIVES</span></div><div class="section-heading"><div><h2>MON <span>HISTORIQUE.</span></h2><p>Choisissez une date ou une semaine pour retrouver les articles publiés.</p></div></div><div class="history-controls"><button type="button" id="day-prev" class="more-btn">← Jour précédent</button><label for="history-date">Date de publication <input type="date" id="history-date"></label><button type="button" id="day-next" class="more-btn">Jour suivant →</button><button type="button" id="history-all" class="more-btn">Tout l’historique</button></div><div id="history-list" class="history-list"></div><p id="history-status" role="status" aria-live="polite"></p><div id="history-articles" class="articles"></div></div></section>
     <footer class="footer container"><div class="brand"><span class="brand-mark">G<span>.</span></span><span class="brand-detail">BTS SIO<br>SLAM</span></div><p class="mono">VEILLE TECHNOLOGIQUE / DÉVELOPPEMENT WEB</p><a class="mono" href="#accueil">RETOUR EN HAUT ↑</a></footer>
   </main>
 </body>
