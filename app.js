@@ -1,6 +1,6 @@
 'use strict';
 const $ = id => document.getElementById(id);
-const state = { articles: [], filter: 'all', q: '', limit: 9, day: '' };
+const state = { articles: [], filter: 'all', q: '', limit: 9 };
 const fmtDate = d => new Intl.DateTimeFormat('fr-FR', { day: 'numeric', month: 'short', year: 'numeric' }).format(new Date(d + 'T12:00:00'));
 const mondayOf = date => { const d = new Date(date + 'T12:00:00'); d.setDate(d.getDate() - (d.getDay() + 6) % 7); return d.toISOString().slice(0, 10); };
 const escapeHTML = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -18,46 +18,25 @@ function render() {
   $('category').value = state.filter;
 }
 function renderHistory() {
-  const days = new Map();
-  for (const a of state.articles) days.set(a.date, (days.get(a.date) || 0) + 1);
+  const weeks = new Map();
+  for (const a of state.articles) { const week = mondayOf(a.date); weeks.set(week, (weeks.get(week) || 0) + 1); }
   const container = $('history-list'); container.replaceChildren();
-  for (const [day, count] of [...days].sort((a,b) => b[0].localeCompare(a[0]))) {
-    const button = document.createElement('button');
-    button.className = 'history-day' + (state.day === day ? ' active' : '');
-    button.textContent = `${fmtDate(day)} · ${count} article${count > 1 ? 's' : ''}`;
-    button.setAttribute('aria-pressed', String(state.day === day));
-    button.addEventListener('click', () => { state.day = day; renderHistory(); });
-    container.append(button);
+  if (!weeks.size) { container.textContent = 'L’historique apparaîtra après la première mise à jour.'; return; }
+  for (const [week, count] of [...weeks].sort((a,b) => b[0].localeCompare(a[0])).slice(0, 16)) {
+    const row = document.createElement('div'); row.className = 'history-week';
+    const label = document.createElement('div'); label.textContent = `Semaine du ${fmtDate(week)}`;
+    const info = document.createElement('small'); info.textContent = `${count} article${count > 1 ? 's' : ''}`;
+    row.append(label, info);
+    container.append(row);
   }
-  const articles = state.articles.filter(a => !state.day || a.date === state.day);
-  $('history-date').value = state.day;
-  $('history-date').max = new Date().toLocaleDateString('sv-SE', {timeZone:'Europe/Paris'});
-  $('day-prev').disabled = !state.day;
-  $('day-next').disabled = !state.day || state.day >= $('history-date').max;
-  $('history-status').textContent = state.day
-    ? `${fmtDate(state.day)} : ${articles.length} article${articles.length > 1 ? 's' : ''} publié${articles.length > 1 ? 's' : ''}.`
-    : `Tout l’historique : ${articles.length} articles sur ${days.size} jours de publication.`;
-  $('history-articles').replaceChildren(...articles.map(card));
-  if (!articles.length) {
-    const empty = document.createElement('div'); empty.className = 'empty';
-    empty.textContent = state.articles.length ? 'Aucun article archivé pour cette date.' : 'L’historique apparaîtra après la première collecte.';
-    $('history-articles').append(empty);
-  }
-}
-function changeDay(offset) {
-  if (!state.day) return;
-  const day = new Date(state.day + 'T12:00:00Z'); day.setUTCDate(day.getUTCDate() + offset);
-  state.day = day.toISOString().slice(0,10); renderHistory();
 }
 function initEvents() {
-  $('history-date').addEventListener('change', e => {state.day=e.target.value; renderHistory();});
-  $('day-prev').addEventListener('click', () => changeDay(-1));
-  $('day-next').addEventListener('click', () => changeDay(1));
-  $('history-all').addEventListener('click', () => {state.day=''; renderHistory();});
   $('search').addEventListener('input', e => { state.q = e.target.value.trim().toLowerCase(); state.limit=9; render(); });
   $('category').addEventListener('change', e => { state.filter=e.target.value; state.limit=9; render(); });
   document.querySelectorAll('.chip').forEach(c => c.addEventListener('click', () => {state.filter=c.dataset.category; state.limit=9; render();}));
   $('more').addEventListener('click', () => {state.limit+=9;render();});
+  $('menu-toggle').addEventListener('click', () => { const nav = $('site-nav'); const opened = nav.classList.toggle('open'); $('menu-toggle').setAttribute('aria-expanded', String(opened)); });
+  document.querySelectorAll('#site-nav a').forEach(a => a.addEventListener('click', () => { $('site-nav').classList.remove('open'); $('menu-toggle').setAttribute('aria-expanded', 'false'); }));
   $('print').addEventListener('click', () => { state.limit = state.articles.length; render(); window.print(); });
 }
 async function start() {
@@ -78,7 +57,6 @@ async function start() {
     else $('notice').textContent = '';
     const cats = [...new Set(state.articles.map(a => a.category))].sort();
     for (const c of cats) { const o = document.createElement('option'); o.value = c; o.textContent = c; $('category').append(o); }
-    state.day = state.articles.map(a => a.date).sort().at(-1) || '';
     renderHistory(); render();
   } catch (e) { $('notice').textContent = `Impossible de lire les actualités : ${e.message}. Ouvrez l'application via un serveur web (pas en double-cliquant sur index.html).`; render(); }
 }

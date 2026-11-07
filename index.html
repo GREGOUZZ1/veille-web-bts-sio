@@ -1,39 +1,41 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#111827" />
-  <meta name="description" content="Veille technologique développement web — BTS SIO SLAM" />
-  <title>Veille Web — BTS SIO SLAM</title>
-  <link rel="stylesheet" href="style.css?v=20261022-fr-jours" />
-  <script src="app.js?v=20261022-fr-jours" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#13151b">
+  <meta name="description" content="Veille technologique en développement web — BTS SIO SLAM">
+  <title>Veille technologique | Développement web • BTS SIO SLAM</title>
+  <link rel="stylesheet" href="style.css?v=20261107">
+  <script src="app.js?v=20261107" defer></script>
 </head>
 <body>
-  <div class="app">
-    <aside class="sidebar">
-      <div class="brand"><div class="brand-icon">&lt;/&gt;</div><div><strong>VEILLE<span>WEB</span></strong><small>BTS SIO • SLAM</small></div></div>
-      <div class="nav-caption">ESPACE DE VEILLE</div>
-      <a class="nav-item selected" href="#accueil">▦ <span>Tableau de bord</span></a>
-      <a class="nav-item" href="#actualites">▤ <span>Actualités</span></a>
-      <a class="nav-item" href="#historique">◷ <span>Historique</span></a>
-      <div class="sidebar-bottom"><div class="online-dot"></div><div><strong>Actualisation le lundi</strong><small>Via GitHub Actions</small></div></div>
-    </aside>
-    <main class="main">
-      <header class="topbar"><span>MON ESPACE / <b>TABLEAU DE BORD</b></span><span class="pill">🎓 2e année • BTS SIO SLAM</span></header>
-      <section class="hero" id="accueil"><div class="hero-text"><div class="eyebrow"><span class="pulse"></span> MA VEILLE TECHNOLOGIQUE</div><h1>Reste à jour sur le<br/><em>développement web.</em></h1><p>HTML, CSS, JavaScript et les tendances du front-end. Une sélection d'articles provenant de sources spécialisées, mise à jour chaque lundi.</p><div class="hero-buttons"><a class="primary-btn" href="#actualites">Explorer les actualités ↗</a><button class="secondary-btn" id="print">↧ Exporter en PDF</button></div></div><div class="hero-decoration" aria-hidden="true"><div class="code-window"><span class="dots">● ● ●</span><pre><span class="pink">const</span> veille = {
-  thème: <span class="green">'web'</span>,
-  niveau: <span class="green">'BTS SLAM'</span>,
-  fréquence: <span class="green">'lundi'</span>,
-  <span class="blue">apprendre</span>: <span class="pink">true</span>
-};</pre></div></div></section>
-      <section class="stats" aria-label="Statistiques"><article class="stat"><div class="stat-label">ARTICLES COLLECTÉS <span>▤</span></div><strong id="count">—</strong><small>Dans l'historique</small></article><article class="stat"><div class="stat-label">CETTE SEMAINE <span>◷</span></div><strong id="weekly">—</strong><small>Nouvelles publications</small></article><article class="stat"><div class="stat-label">SOURCES ACTIVES <span>◉</span></div><strong id="sources">—</strong><small>Sites spécialisés</small></article><article class="stat"><div class="stat-label">DERNIÈRE MISE À JOUR <span>↻</span></div><strong class="date-stat" id="updated">—</strong><small>Automatique chaque lundi</small></article></section>
-      <section class="content" id="actualites"><div class="section-head"><div><div class="section-kicker">FLUX DE VEILLE</div><h2>Les dernières actualités</h2><p>Titres et résumés traduits automatiquement en français. Les sources originales peuvent être en anglais.</p></div><div class="actions"><input id="search" type="search" aria-label="Rechercher un article" placeholder="⌕  Rechercher un sujet..."/><select id="category" aria-label="Filtrer par catégorie"><option value="all">Toutes les catégories</option></select></div></div>
-      <div class="chips" id="chips"><button class="chip active" data-category="all">Toutes les actus</button><button class="chip" data-category="JavaScript">JavaScript</button><button class="chip" data-category="HTML & CSS">HTML & CSS</button><button class="chip" data-category="Frameworks">Frameworks</button><button class="chip" data-category="Accessibilité & UX">UX & accessibilité</button><button class="chip" data-category="Sécurité web">Sécurité</button></div>
-      <div id="notice" class="notice" role="status">Chargement des articles…</div><div id="articles" class="articles"></div><div class="more-bar"><button id="more" class="more-btn" hidden>Afficher plus d'articles ↓</button></div></section>
-      <section class="history" id="historique"><div class="section-kicker">SUIVI RÉGULIER</div><h2>Historique de ma veille</h2><p>Choisis une date pour consulter les articles publiés ce jour-là. La collecte reste hebdomadaire, chaque lundi. Les jours sans article sont indiqués.</p><div class="history-controls"><button id="day-prev" class="more-btn" aria-label="Jour précédent">← Jour précédent</button><label for="history-date">Date de publication <input id="history-date" type="date" /></label><button id="day-next" class="more-btn" aria-label="Jour suivant">Jour suivant →</button><button id="history-all" class="more-btn">Tout l’historique</button></div><p id="history-status" role="status" aria-live="polite"></p><div id="history-list" class="history-list" aria-label="Jours disponibles"></div><div id="history-articles" class="articles"></div></section>
-      <footer><span>VEILLE<span class="accent">WEB</span> — Développement web • BTS SIO SLAM</span><span>Sources : CSS-Tricks · web.dev · Smashing Magazine · JavaScript Weekly</span></footer>
-    </main>
-  </div>
+  <header class="site-header">
+    <a class="brand" href="#accueil" aria-label="Accueil de la veille"><span class="brand-mark">G<span>.</span></span><span class="brand-detail">VEILLE TECHNO<br>LOGIQUE / SLAM</span></a>
+    <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="site-nav">MENU <span aria-hidden="true">☰</span></button>
+    <nav id="site-nav" aria-label="Navigation principale">
+      <a href="#accueil">ACCUEIL</a><a href="#actualites">ACTUALITÉS</a><a href="#historique">HISTORIQUE</a><a class="nav-accent" href="https://atelier-code-bts-slam-2026.mondogreg2.chatgpt.site/#accueil" target="_blank" rel="noopener noreferrer">MON PORTFOLIO ↗</a>
+    </nav>
+  </header>
+  <main>
+    <section id="accueil" class="hero container">
+      <div class="hero-meta mono"><span><i class="status-dot"></i> BTS SIO · OPTION SLAM</span><span>01 / DÉVELOPPEMENT WEB</span></div>
+      <div class="hero-main"><div class="hero-copy"><p class="intro mono"><span>01.</span> ORGANISER MON DÉVELOPPEMENT PROFESSIONNEL</p><h1>VEILLE<br><span class="outline-title">WEB</span><span class="period">.</span></h1></div><div class="hero-aside"><div class="graphic" aria-hidden="true"><span class="graphic-cross">+</span><span class="graphic-ring r1"></span><span class="graphic-ring r2"></span><span class="graphic-ring r3"></span><span class="graphic-code">&lt;/&gt;</span></div><p>Suivre les nouveautés du <strong>développement web</strong> : HTML, CSS, JavaScript, frameworks et bonnes pratiques. Une veille qui prolonge les découvertes de mon stage.</p><div class="hero-actions"><a class="btn-primary" href="#actualites">VOIR LES ACTUALITÉS <span>↗</span></a><button id="print" class="text-action" type="button">EXPORTER EN PDF ↘</button></div></div></div>
+      <div class="hero-footer mono"><span>THÈME / FRONT-END & WEB</span><span>MISE À JOUR PROGRAMMÉE / CHAQUE LUNDI</span><span>FAIRE DÉFILER ↓</span></div>
+    </section>
+    <div class="strip"><div class="container strip-inner mono"><span>HTML / CSS</span><span>JAVASCRIPT</span><span>FRAMEWORKS</span><span>ACCESSIBILITÉ</span><span>SÉCURITÉ WEB</span></div></div>
+    <section class="dashboard container" aria-label="Tableau de bord de la veille">
+      <div class="section-index mono"><span>01 / VUE D'ENSEMBLE</span><span>SUIVI DE LA VEILLE</span></div>
+      <div class="stats"><article class="stat"><span class="stat-label mono">ARTICLES COLLECTÉS</span><strong id="count">—</strong><small>Total des ressources</small></article><article class="stat"><span class="stat-label mono">CETTE SEMAINE</span><strong id="weekly">—</strong><small>Nouvelles publications</small></article><article class="stat"><span class="stat-label mono">SOURCES</span><strong id="sources">—</strong><small>Sites spécialisés</small></article><article class="stat"><span class="stat-label mono">DERNIÈRE MISE À JOUR</span><strong class="date-stat" id="updated">—</strong><small>Collecte programmée le lundi</small></article></div>
+    </section>
+    <section id="actualites" class="news-section container">
+      <div class="section-index mono"><span>02 / FLUX DE VEILLE</span><span>RESSOURCES & DÉCOUVERTES</span></div>
+      <div class="section-heading"><div><h2>LES DERNIÈRES<br><span>ACTUALITÉS.</span></h2><p>Des ressources pour découvrir et approfondir le développement web.</p></div><div class="actions"><label class="sr-only" for="search">Rechercher</label><input id="search" type="search" placeholder="Rechercher un sujet…"><label class="sr-only" for="category">Catégorie</label><select id="category"><option value="all">Toutes les catégories</option></select></div></div>
+      <div class="chips" id="chips"><button type="button" class="chip active" data-category="all">TOUT</button><button type="button" class="chip" data-category="JavaScript">JAVASCRIPT</button><button type="button" class="chip" data-category="HTML & CSS">HTML & CSS</button><button type="button" class="chip" data-category="Frameworks">FRAMEWORKS</button><button type="button" class="chip" data-category="Accessibilité & UX">UX & ACCESSIBILITÉ</button><button type="button" class="chip" data-category="Sécurité web">SÉCURITÉ</button></div>
+      <div id="notice" role="status" class="notice">Chargement des articles…</div><div id="articles" class="articles"></div><div class="more-bar"><button type="button" id="more" class="more-btn" hidden>AFFICHER PLUS D’ARTICLES ↓</button></div>
+    </section>
+    <section id="historique" class="history-section"><div class="container"><div class="section-index mono"><span>03 / SUIVI DANS LE TEMPS</span><span>ARCHIVES</span></div><div class="section-heading"><div><h2>MON <span>HISTORIQUE.</span></h2><p>Retrouver les articles par semaine de publication.</p></div></div><div id="history-list" class="history-list"></div></div></section>
+    <footer class="footer container"><div class="brand"><span class="brand-mark">G<span>.</span></span><span class="brand-detail">BTS SIO<br>SLAM</span></div><p class="mono">VEILLE TECHNOLOGIQUE / DÉVELOPPEMENT WEB</p><a class="mono" href="#accueil">RETOUR EN HAUT ↑</a></footer>
+  </main>
 </body>
 </html>
