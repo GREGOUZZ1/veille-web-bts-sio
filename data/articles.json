@@ -1,8 +1,20 @@
 {
-  "last_updated": "2026-11-07T13:55:34+00:00",
-  "article_count": 54,
+  "last_updated": "2026-11-09T17:11:38+00:00",
+  "article_count": 55,
   "errors": [],
   "articles": [
+    {
+      "id": "94647bd120c05358",
+      "title": "Astuces CSS, version 20",
+      "url": "https://css-tricks.com/css-tricks-version-20/",
+      "source": "CSS-Tricks",
+      "date": "2026-11-09",
+      "category": "HTML & CSS",
+      "summary": "Les choses semblent un peu différentes ici ? Je l'espère car nous venons de pousser une refonte du site ! Voici toutes les nouveautés de la 20ème (!!) version de CSS-Tricks. CSS-Tricks, version 20 initialement manuscrite et publiée avec amour sur CSS-Tricks . Vous devriez également recevoir la newsletter.",
+      "original_title": "CSS-Tricks, Version 20",
+      "original_summary": "Things look a little different around here? I hope so because we just pushed a site redesign! Here's everything new with the 20th(!!) version of CSS-Tricks. CSS-Tricks, Version 20 originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as well.",
+      "language": "fr"
+    },
     {
       "id": "f3278eedeac0aaab",
       "title": "Club RSS : Aperçu de la refonte des astuces CSS",
