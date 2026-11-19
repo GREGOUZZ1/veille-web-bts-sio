@@ -164,10 +164,32 @@ def main():
         merged[article['id']] = article
     # Historique conservé sans suppression automatique ni limite d'articles.
     old_by_id = {a['id']: a for a in old if isinstance(a, dict) and 'id' in a}
-    with ThreadPoolExecutor(max_workers=2) as pool:
-        articles = list(pool.map(lambda a: french_article(a, old_by_id.get(a['id'])), merged.values()))
+    articles = []
+    translation_available = True
+    for article in merged.values():
+        previous_article = old_by_id.get(article['id'])
+        # Les traductions en cache restent utilisables même après une panne.
+        cached = (previous_article and previous_article.get('language') == 'fr'
+                  and previous_article.get('original_title') == article.get('original_title', article['title'])
+                  and previous_article.get('original_summary') == article.get('original_summary', article['summary']))
+        if article.get('language') == 'fr' or cached or translation_available:
+            try:
+                article = french_article(article, previous_article)
+            except Exception as exc:
+                errors.append(f'Traduction indisponible : {exc}. Articles originaux conservés ; nouvel essai à la prochaine collecte.')
+                translation_available = False
+                # Une traduction partielle ne doit pas remplacer la version publiée.
+                if previous_article and previous_article.get('language') == 'fr':
+                    article = dict(previous_article)
+                else:
+                    article = dict(article, language='en')
+        elif previous_article and previous_article.get('language') == 'fr':
+            article = dict(previous_article)
+        else:
+            article = dict(article, language='en')
+        articles.append(article)
     articles.sort(key=lambda a: (a['date'], a['id']), reverse=True)
-    print(f'{len(articles)} articles disponibles en français.')
+    print(f'{len(articles)} articles disponibles.')
     output = {'last_updated': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'), 'article_count': len(articles), 'errors': errors, 'articles': articles}
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(output, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
