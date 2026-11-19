@@ -1,8 +1,100 @@
 {
-  "last_updated": "2026-11-09T17:11:38+00:00",
-  "article_count": 55,
-  "errors": [],
+  "last_updated": "2026-11-19T14:00:35+00:00",
+  "article_count": 64,
+  "errors": [
+    "Traduction indisponible : HTTP Error 429: Too Many Requests. Articles originaux conservés ; nouvel essai à la prochaine collecte."
+  ],
   "articles": [
+    {
+      "id": "e05af335c6ba29fe",
+      "title": "When Everything Has Changed, What Do We Do Next?",
+      "url": "https://css-tricks.com/when-everything-has-changed/",
+      "source": "CSS-Tricks",
+      "date": "2026-11-18",
+      "category": "HTML & CSS",
+      "summary": "It’s been a… year, huh? I think the most common emoji I’ve seen this year is “Face with Bags Under Eyes” (🫩) and that says a lot. One thing is for sure: the industry we make a living in is … When Everything Has Changed, What Do We Do Next? originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as well.",
+      "language": "en"
+    },
+    {
+      "id": "bbd598c18d75ada7",
+      "title": "The top 10 things AI gets wrong in web development",
+      "url": "https://javascriptweekly.com/issues/811",
+      "source": "JavaScript Weekly",
+      "date": "2026-11-17",
+      "category": "Sécurité web",
+      "summary": "#​811 — November 17, 2026 Read on the Web JavaScript Weekly npkill 1.0: Not Just for node_modules Anymore — npx npkill has long offered a way to find and remove waste from node_modules folders. Its first release in two years now also hunts down caches and build outputs like .next and .turbo , with 'profiles' for 20 ecosystems. If you're new to the…",
+      "language": "en"
+    },
+    {
+      "id": "91c9391a99e9e119",
+      "title": "AI Sped Up The Build: How Can Accessibility Testing Keep Up?",
+      "url": "https://smashingmagazine.com/2026/11/ai-sped-up-build-how-can-accessibility-testing-keep-up/",
+      "source": "Smashing Magazine",
+      "date": "2026-11-17",
+      "category": "Accessibilité & UX",
+      "summary": "AI has sped up how teams design and build, but quality assurance (QA) testing hasn’t kept pace, and the web may be getting less accessible. Drawing on new research, Andrew Chung explains what separates the teams whose accessibility efforts are keeping up, and how to embed human judgment into AI-enabled workflows without slowing delivery.",
+      "language": "en"
+    },
+    {
+      "id": "526efa440b05206d",
+      "title": "Meet AI 2027 Conference (Dec 1)",
+      "url": "https://smashingmagazine.com/2026/11/online-smashingconf-ai-2027/",
+      "source": "Smashing Magazine",
+      "date": "2026-11-17",
+      "category": "Développement web",
+      "summary": "Roll up your sleeves! Meet shiny new [AI 2027 Conference](https://smashingconf.com/ai-2027-conference), a friendly online conference on AI-ready design systems, AI + Figma and AI design patterns. What to expect in 2027 and where teams are getting AI right. [Jump to tickets.](https://smashingconf.com/ai-2027-conference/registration)",
+      "language": "en"
+    },
+    {
+      "id": "a7b060abe97a4c04",
+      "title": "Staggering Scroll-Driven Animations with animation-range-start",
+      "url": "https://css-tricks.com/staggering-scroll-driven-animations-with-animation-range-start/",
+      "source": "CSS-Tricks",
+      "date": "2026-11-16",
+      "category": "HTML & CSS",
+      "summary": "Imagine a CSS karaoke machine that displays a ball bouncing on text that incrementally highlights, based on progress through via speech recognition and running that kind of animation as a single predictable, holistic effect driven by one progress value. Staggering Scroll-Driven Animations with animation-range-start originally handwritten and…",
+      "language": "en"
+    },
+    {
+      "id": "6ae57d8b72d99749",
+      "title": "10 Big Ol’ 2027 Black Friday Deals",
+      "url": "https://css-tricks.com/2027-front-end-black-friday-deals/",
+      "source": "CSS-Tricks",
+      "date": "2026-11-13",
+      "category": "HTML & CSS",
+      "summary": "A big ol' roundup of Black Friday deals on front-end courses from the best independent publishers and educators in the business. 10 Big Ol’ 2027 Black Friday Deals originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as well.",
+      "language": "en"
+    },
+    {
+      "id": "61722942071e210f",
+      "title": "Beyond 12 Columns: Designing Layouts With Personality",
+      "url": "https://css-tricks.com/beyond-12-columns/",
+      "source": "CSS-Tricks",
+      "date": "2026-11-12",
+      "category": "HTML & CSS",
+      "summary": "Too many websites look alike. They use familiar layouts, repeat the same patterns, and often leave little impression once you’ve moved on. Andy Clarke explores how understanding a company’s story can lead to more distinctive designs, using modular and compound grids to create layouts with character. Beyond 12 Columns: Designing Layouts With…",
+      "language": "en"
+    },
+    {
+      "id": "3a8730a9c39129e2",
+      "title": "CSS Optimization: Is Using Declarations Just Once (UDJO) Still Effective Today?",
+      "url": "https://css-tricks.com/css-using-declarations-just-once/",
+      "source": "CSS-Tricks",
+      "date": "2026-11-10",
+      "category": "HTML & CSS",
+      "summary": "Is the technique inspired by the DRY principle by identifying and reducing (if not eliminating) CSS declaration repetition still a relevant optimization strategy? CSS Optimization: Is Using Declarations Just Once (UDJO) Still Effective Today? originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as…",
+      "language": "en"
+    },
+    {
+      "id": "00a3012896f8eb60",
+      "title": "How X (Twitter) is rebuilding its web app",
+      "url": "https://javascriptweekly.com/issues/810",
+      "source": "JavaScript Weekly",
+      "date": "2026-11-10",
+      "category": "Sécurité web",
+      "summary": "#​810 — November 10, 2026 Read on the Web JavaScript Weekly How X (Twitter) is Rebuilding Its Web App — X is replacing 3 servers with one app built on React, Vite and Fastify. Yagiz, famed for his performance work on Node, explains the streaming architecture behind it, along with some bottlenecks they had to fix, like how hundreds of tiny…",
+      "language": "en"
+    },
     {
       "id": "94647bd120c05358",
       "title": "Astuces CSS, version 20",
