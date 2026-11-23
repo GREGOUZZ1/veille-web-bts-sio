@@ -1,99 +1,163 @@
 {
-  "last_updated": "2026-11-19T14:00:35+00:00",
-  "article_count": 64,
-  "errors": [
-    "Traduction indisponible : HTTP Error 429: Too Many Requests. Articles originaux conservés ; nouvel essai à la prochaine collecte."
-  ],
+  "last_updated": "2026-11-23T18:59:54+00:00",
+  "article_count": 68,
+  "errors": [],
   "articles": [
     {
+      "id": "993c3515171da1d8",
+      "title": "Utiliser des solutions de secours pour un frontal robuste",
+      "url": "https://css-tricks.com/using-frontend-fallbacks/",
+      "source": "CSS-Tricks",
+      "date": "2026-11-23",
+      "category": "HTML & CSS",
+      "summary": "Il est important d’utiliser des solutions de secours pour créer un frontal robuste, soit pour éviter l’erreur de manière silencieuse et discrète, soit pour la communiquer à nos utilisateurs. Utiliser des solutions de repli pour un front-end robuste initialement manuscrit et publié avec amour sur CSS-Tricks . Vous devriez également recevoir la newsletter.",
+      "original_title": "Using Fallbacks for a Robust Front-End",
+      "original_summary": "It’s important to use fallbacks to build a robust front end, either to quietly and discreetly avoid the error or to communicate it to our users. Using Fallbacks for a Robust Front-End originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as well.",
+      "language": "fr"
+    },
+    {
+      "id": "182eb7336f79409d",
+      "title": "Archives de matériel de développement",
+      "url": "https://css-tricks.com/dev-material-archive/",
+      "source": "CSS-Tricks",
+      "date": "2026-11-23",
+      "category": "Accessibilité & UX",
+      "summary": "Une nouvelle ressource ressuscitant les articles et publications perdus sur le développement Web : il s'agit d'une archive d'articles écrits sur le développement Web, la conception Web et l'accessibilité Web qui existaient autrefois sur le World Wide Web et qui autrement seraient perdus pour… Dev Material Archive, initialement manuscrits et publiés avec amour sur CSS-Tricks. Tu devrais vraiment avoir le...",
+      "original_title": "Dev Material Archive",
+      "original_summary": "A new resource resurrecting lost web-dev articles and posts : This is an archive of written articles about web development, web design, and web accessibility that once existed on the World Wide Web and which would otherwise be lost to … Dev Material Archive originally handwritten and published with love on CSS-Tricks . You should really get the…",
+      "language": "fr"
+    },
+    {
+      "id": "dc268e4b3f780ce8",
+      "title": "Andy Clarke répond à six questions sur les designs remarquables pour le Web",
+      "url": "https://css-tricks.com/andy-clarke-standout-designs-for-the-web-interview/",
+      "source": "CSS-Tricks",
+      "date": "2026-11-20",
+      "category": "HTML & CSS",
+      "summary": "Le concepteur Web, auteur et fondateur de Stuff & Nonsense, Andy Clarke, a publié Standout Designs for the Web, un nouveau livre électronique qui encourage les concepteurs à aller au-delà des modèles familiers et des mises en page conventionnelles pour créer des sites Web davantage axés sur la personnalité. Le livre dessine… Andy Clarke répond à l'origine à six questions sur les conceptions remarquables pour le Web…",
+      "original_title": "Andy Clarke answers six questions about Standout Designs for the Web",
+      "original_summary": "Web designer, author, and Stuff & Nonsense founder Andy Clarke has released Standout Designs for the Web , a new e-book that encourages designers to move beyond familiar templates and conventional layouts to create more personality-driven websites. The book draws … Andy Clarke answers six questions about Standout Designs for the Web originally…",
+      "language": "fr"
+    },
+    {
+      "id": "d29a38f91af964ad",
+      "title": "état de défilement()",
+      "url": "https://css-tricks.com/almanac/functions/s/scroll-state/",
+      "source": "CSS-Tricks",
+      "date": "2026-11-19",
+      "category": "HTML & CSS",
+      "summary": "Étonnamment, la requête CSS scroll-state() n'a rien à voir avec le fait que vous fassiez un défilement catastrophique dans un état de terreur existentielle. Il vous permet cependant de modifier le CSS utilisé en fonction du comportement de défilement. scroll-state() initialement manuscrit et publié avec amour sur CSS-Tricks . Vous devriez également recevoir la newsletter.",
+      "original_title": "scroll-state()",
+      "original_summary": "The CSS scroll-state() query, surprisingly, has nothing to do with whether you’re doom-scrolling in a state of existential dread. It does, however, allow you to change the CSS used based on scrolling behavior. scroll-state() originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as well.",
+      "language": "fr"
+    },
+    {
       "id": "e05af335c6ba29fe",
-      "title": "When Everything Has Changed, What Do We Do Next?",
+      "title": "Quand tout a changé, que faisons-nous ensuite ?",
       "url": "https://css-tricks.com/when-everything-has-changed/",
       "source": "CSS-Tricks",
       "date": "2026-11-18",
       "category": "HTML & CSS",
-      "summary": "It’s been a… year, huh? I think the most common emoji I’ve seen this year is “Face with Bags Under Eyes” (🫩) and that says a lot. One thing is for sure: the industry we make a living in is … When Everything Has Changed, What Do We Do Next? originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as well.",
-      "language": "en"
+      "summary": "Ça fait un… an, hein ? Je pense que l’emoji le plus courant que j’ai vu cette année est « Visage avec des poches sous les yeux » (🫩) et cela en dit long. Une chose est sûre : l’industrie dans laquelle nous gagnons notre vie est… Quand tout a changé, que faisons-nous ensuite ? initialement manuscrit et publié avec amour sur CSS-Tricks . Vous devriez également recevoir la newsletter.",
+      "original_title": "When Everything Has Changed, What Do We Do Next?",
+      "original_summary": "It’s been a… year, huh? I think the most common emoji I’ve seen this year is “Face with Bags Under Eyes” (🫩) and that says a lot. One thing is for sure: the industry we make a living in is … When Everything Has Changed, What Do We Do Next? originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as well.",
+      "language": "fr"
     },
     {
       "id": "bbd598c18d75ada7",
-      "title": "The top 10 things AI gets wrong in web development",
+      "title": "Les 10 principales erreurs commises par l'IA dans le développement Web",
       "url": "https://javascriptweekly.com/issues/811",
       "source": "JavaScript Weekly",
       "date": "2026-11-17",
       "category": "Sécurité web",
-      "summary": "#​811 — November 17, 2026 Read on the Web JavaScript Weekly npkill 1.0: Not Just for node_modules Anymore — npx npkill has long offered a way to find and remove waste from node_modules folders. Its first release in two years now also hunts down caches and build outputs like .next and .turbo , with 'profiles' for 20 ecosystems. If you're new to the…",
-      "language": "en"
+      "summary": "#​811 — 17 novembre 2026 Lire sur le Web JavaScript Weekly npkill 1.0 : plus seulement pour node_modules — npx npkill propose depuis longtemps un moyen de rechercher et de supprimer les déchets des dossiers node_modules. Sa première version en deux ans recherche désormais également les caches et crée des sorties telles que .next et .turbo, avec des « profils » pour 20 écosystèmes. Si vous êtes nouveau dans le…",
+      "original_title": "The top 10 things AI gets wrong in web development",
+      "original_summary": "#​811 — November 17, 2026 Read on the Web JavaScript Weekly npkill 1.0: Not Just for node_modules Anymore — npx npkill has long offered a way to find and remove waste from node_modules folders. Its first release in two years now also hunts down caches and build outputs like .next and .turbo , with 'profiles' for 20 ecosystems. If you're new to the…",
+      "language": "fr"
     },
     {
       "id": "91c9391a99e9e119",
-      "title": "AI Sped Up The Build: How Can Accessibility Testing Keep Up?",
+      "title": "L’IA a accéléré la construction : comment les tests d’accessibilité peuvent-ils suivre le rythme ?",
       "url": "https://smashingmagazine.com/2026/11/ai-sped-up-build-how-can-accessibility-testing-keep-up/",
       "source": "Smashing Magazine",
       "date": "2026-11-17",
       "category": "Accessibilité & UX",
-      "summary": "AI has sped up how teams design and build, but quality assurance (QA) testing hasn’t kept pace, and the web may be getting less accessible. Drawing on new research, Andrew Chung explains what separates the teams whose accessibility efforts are keeping up, and how to embed human judgment into AI-enabled workflows without slowing delivery.",
-      "language": "en"
+      "summary": "L’IA a accéléré la façon dont les équipes conçoivent et construisent, mais les tests d’assurance qualité (AQ) n’ont pas suivi le rythme et le Web pourrait devenir de moins en moins accessible. S'appuyant sur de nouvelles recherches, Andrew Chung explique ce qui sépare les équipes dont les efforts en matière d'accessibilité se maintiennent et comment intégrer le jugement humain dans les flux de travail basés sur l'IA sans ralentir la livraison.",
+      "original_title": "AI Sped Up The Build: How Can Accessibility Testing Keep Up?",
+      "original_summary": "AI has sped up how teams design and build, but quality assurance (QA) testing hasn’t kept pace, and the web may be getting less accessible. Drawing on new research, Andrew Chung explains what separates the teams whose accessibility efforts are keeping up, and how to embed human judgment into AI-enabled workflows without slowing delivery.",
+      "language": "fr"
     },
     {
       "id": "526efa440b05206d",
-      "title": "Meet AI 2027 Conference (Dec 1)",
+      "title": "Conférence Meet AI 2027 (1er décembre)",
       "url": "https://smashingmagazine.com/2026/11/online-smashingconf-ai-2027/",
       "source": "Smashing Magazine",
       "date": "2026-11-17",
       "category": "Développement web",
-      "summary": "Roll up your sleeves! Meet shiny new [AI 2027 Conference](https://smashingconf.com/ai-2027-conference), a friendly online conference on AI-ready design systems, AI + Figma and AI design patterns. What to expect in 2027 and where teams are getting AI right. [Jump to tickets.](https://smashingconf.com/ai-2027-conference/registration)",
-      "language": "en"
+      "summary": "Retroussez vos manches ! Découvrez la toute nouvelle [Conférence AI 2027](https://smashingconf.com/ai-2027-conference), une conférence en ligne conviviale sur les systèmes de conception prêts pour l'IA, l'IA + Figma et les modèles de conception IA. À quoi s’attendre en 2027 et où les équipes maîtrisent l’IA. [Aller aux billets.](https://smashingconf.com/ai-2027-conference/registration)",
+      "original_title": "Meet AI 2027 Conference (Dec 1)",
+      "original_summary": "Roll up your sleeves! Meet shiny new [AI 2027 Conference](https://smashingconf.com/ai-2027-conference), a friendly online conference on AI-ready design systems, AI + Figma and AI design patterns. What to expect in 2027 and where teams are getting AI right. [Jump to tickets.](https://smashingconf.com/ai-2027-conference/registration)",
+      "language": "fr"
     },
     {
       "id": "a7b060abe97a4c04",
-      "title": "Staggering Scroll-Driven Animations with animation-range-start",
+      "title": "Animations stupéfiantes pilotées par défilement avec animation-range-start",
       "url": "https://css-tricks.com/staggering-scroll-driven-animations-with-animation-range-start/",
       "source": "CSS-Tricks",
       "date": "2026-11-16",
       "category": "HTML & CSS",
-      "summary": "Imagine a CSS karaoke machine that displays a ball bouncing on text that incrementally highlights, based on progress through via speech recognition and running that kind of animation as a single predictable, holistic effect driven by one progress value. Staggering Scroll-Driven Animations with animation-range-start originally handwritten and…",
-      "language": "en"
+      "summary": "Imaginez une machine de karaoké CSS qui affiche une balle rebondissant sur du texte qui est progressivement mis en évidence, en fonction de la progression via la reconnaissance vocale et exécutant ce type d'animation comme un seul effet holistique prévisible piloté par une valeur de progression. Animations stupéfiantes basées sur le défilement avec début de plage d'animation écrit à l'origine à la main et…",
+      "original_title": "Staggering Scroll-Driven Animations with animation-range-start",
+      "original_summary": "Imagine a CSS karaoke machine that displays a ball bouncing on text that incrementally highlights, based on progress through via speech recognition and running that kind of animation as a single predictable, holistic effect driven by one progress value. Staggering Scroll-Driven Animations with animation-range-start originally handwritten and…",
+      "language": "fr"
     },
     {
       "id": "6ae57d8b72d99749",
-      "title": "10 Big Ol’ 2027 Black Friday Deals",
+      "title": "10 offres Big Ol' 2027 Black Friday",
       "url": "https://css-tricks.com/2027-front-end-black-friday-deals/",
       "source": "CSS-Tricks",
       "date": "2026-11-13",
       "category": "HTML & CSS",
-      "summary": "A big ol' roundup of Black Friday deals on front-end courses from the best independent publishers and educators in the business. 10 Big Ol’ 2027 Black Friday Deals originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as well.",
-      "language": "en"
+      "summary": "Un grand récapitulatif des offres du Black Friday sur les cours front-end proposés par les meilleurs éditeurs et éducateurs indépendants du secteur. 10 Big Ol' 2027 Black Friday Deals initialement manuscrites et publiées avec amour sur CSS-Tricks. Vous devriez également recevoir la newsletter.",
+      "original_title": "10 Big Ol’ 2027 Black Friday Deals",
+      "original_summary": "A big ol' roundup of Black Friday deals on front-end courses from the best independent publishers and educators in the business. 10 Big Ol’ 2027 Black Friday Deals originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as well.",
+      "language": "fr"
     },
     {
       "id": "61722942071e210f",
-      "title": "Beyond 12 Columns: Designing Layouts With Personality",
+      "title": "Au-delà de 12 colonnes : concevoir des mises en page avec de la personnalité",
       "url": "https://css-tricks.com/beyond-12-columns/",
       "source": "CSS-Tricks",
       "date": "2026-11-12",
       "category": "HTML & CSS",
-      "summary": "Too many websites look alike. They use familiar layouts, repeat the same patterns, and often leave little impression once you’ve moved on. Andy Clarke explores how understanding a company’s story can lead to more distinctive designs, using modular and compound grids to create layouts with character. Beyond 12 Columns: Designing Layouts With…",
-      "language": "en"
+      "summary": "Trop de sites Web se ressemblent. Ils utilisent des mises en page familières, répètent les mêmes modèles et laissent souvent peu d’impression une fois que vous avez évolué. Andy Clarke explore comment la compréhension de l’histoire d’une entreprise peut conduire à des conceptions plus distinctives, en utilisant des grilles modulaires et composées pour créer des mises en page pleines de caractère. Au-delà de 12 colonnes : concevoir des mises en page avec…",
+      "original_title": "Beyond 12 Columns: Designing Layouts With Personality",
+      "original_summary": "Too many websites look alike. They use familiar layouts, repeat the same patterns, and often leave little impression once you’ve moved on. Andy Clarke explores how understanding a company’s story can lead to more distinctive designs, using modular and compound grids to create layouts with character. Beyond 12 Columns: Designing Layouts With…",
+      "language": "fr"
     },
     {
       "id": "3a8730a9c39129e2",
-      "title": "CSS Optimization: Is Using Declarations Just Once (UDJO) Still Effective Today?",
+      "title": "Optimisation CSS : l'utilisation des déclarations une seule fois (UDJO) est-elle toujours efficace aujourd'hui ?",
       "url": "https://css-tricks.com/css-using-declarations-just-once/",
       "source": "CSS-Tricks",
       "date": "2026-11-10",
       "category": "HTML & CSS",
-      "summary": "Is the technique inspired by the DRY principle by identifying and reducing (if not eliminating) CSS declaration repetition still a relevant optimization strategy? CSS Optimization: Is Using Declarations Just Once (UDJO) Still Effective Today? originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as…",
-      "language": "en"
+      "summary": "La technique inspirée du principe DRY en identifiant et réduisant (voire éliminant) la répétition des déclarations CSS est-elle toujours une stratégie d'optimisation pertinente ? Optimisation CSS : l'utilisation des déclarations une seule fois (UDJO) est-elle toujours efficace aujourd'hui ? initialement manuscrit et publié avec amour sur CSS-Tricks . Vous devriez vraiment recevoir la newsletter car…",
+      "original_title": "CSS Optimization: Is Using Declarations Just Once (UDJO) Still Effective Today?",
+      "original_summary": "Is the technique inspired by the DRY principle by identifying and reducing (if not eliminating) CSS declaration repetition still a relevant optimization strategy? CSS Optimization: Is Using Declarations Just Once (UDJO) Still Effective Today? originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as…",
+      "language": "fr"
     },
     {
       "id": "00a3012896f8eb60",
-      "title": "How X (Twitter) is rebuilding its web app",
+      "title": "Comment X (Twitter) reconstruit son application web",
       "url": "https://javascriptweekly.com/issues/810",
       "source": "JavaScript Weekly",
       "date": "2026-11-10",
       "category": "Sécurité web",
-      "summary": "#​810 — November 10, 2026 Read on the Web JavaScript Weekly How X (Twitter) is Rebuilding Its Web App — X is replacing 3 servers with one app built on React, Vite and Fastify. Yagiz, famed for his performance work on Node, explains the streaming architecture behind it, along with some bottlenecks they had to fix, like how hundreds of tiny…",
-      "language": "en"
+      "summary": "#​810 — 10 novembre 2026 Lire sur le Web JavaScript Weekly Comment X (Twitter) reconstruit son application Web — X remplace 3 serveurs par une application construite sur React, Vite et Fastify. Yagiz, célèbre pour son travail de performance sur Node, explique l'architecture de streaming derrière celui-ci, ainsi que certains goulots d'étranglement qu'ils ont dû résoudre, comme la façon dont des centaines de minuscules…",
+      "original_title": "How X (Twitter) is rebuilding its web app",
+      "original_summary": "#​810 — November 10, 2026 Read on the Web JavaScript Weekly How X (Twitter) is Rebuilding Its Web App — X is replacing 3 servers with one app built on React, Vite and Fastify. Yagiz, famed for his performance work on Node, explains the streaming architecture behind it, along with some bottlenecks they had to fix, like how hundreds of tiny…",
+      "language": "fr"
     },
     {
       "id": "94647bd120c05358",
